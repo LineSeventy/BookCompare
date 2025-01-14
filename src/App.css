@@ -1,0 +1,25 @@
+:root{
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#root{
+    height: 100vh;
+}
+
+.container {
+    height: 100%;
+    width: 100%; 
+    /* background-image: url("https://i.pinimg.com/736x/36/a0/85/36a085785eabcc6add04d35e8c97be37.jpg"); */
+    background-image: url("https://img.freepik.com/premium-vector/book-repeating-red-pattern-abstract-beautiful-vector-illustration_90697-1903.jpg?w=740");
+    padding: 1em;
+    background-repeat: repeat;
+    z-index: 0;
+
+
+
+}
