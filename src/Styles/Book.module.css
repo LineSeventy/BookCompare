@@ -1,0 +1,39 @@
+.cardBook{
+    /* background-color: white; */
+    width: 20em;
+    height: 20em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0rem .4rem .2rem black;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* grid-template-columns: 1fr 3fr; */
+    /* flex-direction: column; */
+    width: 100%;
+    height: 100%;
+    /* margin-top: 20%; */
+    overflow: auto;
+
+    box-sizing: border-box;
+}
+
+.bookWrapper{
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/2;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1em;
+
+    /* flex-direction: column; */
+    /* width: 100%;
+    height: 100%; */
+}

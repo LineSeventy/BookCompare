@@ -6,9 +6,11 @@ import Container from './Container';
 function Layout() {
   return (
     <>
+    <Container>
       <NavBar />
-      <Container>
         <Outlet /> 
+
+        
       </Container>
     </>
   );
