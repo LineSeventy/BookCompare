@@ -13,27 +13,23 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* grid-template-columns: 1fr 3fr; */
-    /* flex-direction: column; */
+
     width: 100%;
     height: 100%;
-    /* margin-top: 20%; */
+
     overflow: auto;
 
     box-sizing: border-box;
 }
 
 .bookWrapper{
-    height: 100%;
+    height: 90%;
     display: grid;
     justify-content: center;
     align-items: center;
     grid-column: 2/2;
     grid-template-columns: repeat(3, 1fr);
-
+    
     gap: 1em;
 
-    /* flex-direction: column; */
-    /* width: 100%;
-    height: 100%; */
 }

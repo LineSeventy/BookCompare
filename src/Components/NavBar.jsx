@@ -6,11 +6,15 @@ function NavBar() {
     <header>  
 
       <nav>
-
+  <div>
+    <NavLink> User Profile</NavLink>
     <NavLink > Search</NavLink> 
+    </div>
+    <div>
     <NavLink to={"/Books"}>Books</NavLink>
     <NavLink to={"/"}>Home</NavLink> 
     <NavLink to={"/About"}> About</NavLink>
+    </div>
     </nav>
     </header>
   )

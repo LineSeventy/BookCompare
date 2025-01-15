@@ -10,7 +10,7 @@ nav{
     background-color: burlywood; 
     width: 100%;
     height: auto;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: .9em 0;
     
 
