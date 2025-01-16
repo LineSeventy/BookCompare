@@ -5,6 +5,7 @@ import About from "../Components/About";
 import Layout from "../Components/Layout";
 import Books from "../Components/Books";
 import BookIndividual from "../Components/BookIndividual";
+import UserProfile from "../Components/UserProfile";
 
 const router = createBrowserRouter([
   {
@@ -26,13 +27,18 @@ const router = createBrowserRouter([
       {
         path: "/Books/:Id",  
         element: <BookIndividual />
+      },
+      {
+        path: "/User",
+        element:<UserProfile/>
       }
     ]
   },
   {
     path: "*",
     element: <h1>Error Here</h1>
-  }
+  },
+
 ]);
 
 export default router;

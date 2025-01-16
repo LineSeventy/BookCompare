@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { BookData } from './BooksData'; 
-
+import styles from "../Styles/Individual.module.css";
 function BookIndividual() {
   const { Id } = useParams(); 
 
@@ -14,12 +14,23 @@ function BookIndividual() {
   }
 
   return (
-    <div>
-      <h1>Book Detail for ID: {Id}</h1>
+    <div className={styles.container}>
+      <div className={styles.card}>
+      <img src={book.img} alt={book.name} style={{ width: "200px" }} /> 
+      
       <h2>{book.name}</h2>
       <p>{book.desc}</p>
-      <img src={book.img} alt={book.name} style={{ width: "200px" }} />
-
+      <div className={styles.priceWrapper}>
+        Price:
+      <span>{book.shPrice} </span>
+      <span>{book.lazPrice}</span>
+      </div>
+      <div >
+        Links:
+      <a href={book.shUrl} target="_blank" rel="noopener noreferrer">Shopee</a>
+      <a href={book.lazUrl} target="_blank" rel="noopener noreferrer">Lazada</a>
+      </div>
+      </div>
     </div>
   );
 }

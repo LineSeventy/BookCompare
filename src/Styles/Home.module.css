@@ -1,0 +1,213 @@
+  .container h1 {
+    text-align: center;
+    color: #343a40;
+    margin-top: 20px;
+  }
+  
+ 
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  .container form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .container label {
+    font-size: 16px;
+    color: #495057;
+  }
+  
+  .container  input[type="email"],
+  .container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #495057;
+    background-color: #ffffff;
+  }
+  
+  .container input:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.25);
+  }
+  
+
+  .container button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    text-align: center;
+  }
+  
+  .container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .container  button:active {
+    background-color: #004085;
+  }
+  .loginWrapper {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+    box-sizing: border-box;
+    padding: 5em;
+    z-index: 500;
+  }
+  
+
+  .AccCreateModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker dim background */
+    z-index: 1000; /* Ensure the modal is on top */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.3s ease-in-out; /* Smooth fade-in animation */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .modalForm {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Limit maximum size */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative; /* For close button positioning */
+    transform: translateY(-10px);
+    animation: slideIn 0.4s ease-in-out forwards; /* Smooth slide-in animation */
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .modalForm h2 {
+    text-align: center;
+    color: #333333;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .modalForm form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .modalForm label {
+    font-size: 1rem;
+    color: #555555;
+  }
+  
+  .modalForm input[type="email"],
+  .modalForm input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #495057;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .modalForm input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+  }
+  
+  .modalForm button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .modalForm button:hover {
+    background-color: #0056b3;
+  }
+  
+  .modalForm button:active {
+    background-color: #003d80;
+  }
+  
+  .modalForm .closeButton {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #888888;
+    transition: color 0.3s ease;
+  }
+  
+  .modalForm .closeButton:hover {
+    color: #333333;
+  }
+  
+  .modalForm .submitButton {
+    background-color: #28a745;
+  }
+  
+  .modalForm .submitButton:hover {
+    background-color: #218838;
+  }
+  
+  .modalForm .submitButton:active {
+    background-color: #1e7e34;
+  }
+  
+  

@@ -1,13 +1,20 @@
 .cardBook{
     /* background-color: white; */
     width: 20em;
-    height: 20em;
+    height: 30em;
     border-radius: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-shadow: 0rem .4rem .2rem black;
     background-color: rgba(255, 255, 255, 0.8);
+    padding: 2em;
+}
+
+.cardBook img{
+    width: 100%;
+    max-height: 15em; /* Set a max height to avoid overly large images */
+    object-fit: contain; /* Maintain aspect ratio */
 }
 section{
     display: flex;
@@ -16,14 +23,15 @@ section{
 
     width: 100%;
     height: 100%;
-
+    
     overflow: auto;
-
+    padding: 2em;
     box-sizing: border-box;
+    
 }
 
 .bookWrapper{
-    height: 90%;
+    height: 75%;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -32,4 +40,56 @@ section{
     
     gap: 1em;
 
+}
+
+.text{
+    overflow: hidden;
+    font-size: medium;
+    font-weight: normal;
+    text-align: center;
+    margin: 0.5em 0;
+
+}
+
+
+
+.categoriesHeader {
+    background-color: darkcyan;
+    width: 100%;
+    box-shadow: 0rem .2rem .2rem rgba(0, 0, 0, 0.9);
+    position: absolute; 
+    z-index: 9;
+    padding: 1em;
+    box-sizing: border-box;
+    height: auto;
+    margin-bottom: 1rem; 
+    
+}
+.categoriesHeader button{
+    border: none;
+    margin: 1em;
+    border-radius: 1em;
+}
+.dropdown {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1em;
+    z-index: 1000;
+    width: max-content;
+}
+
+.dropdown h2 {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    white-space: nowrap; /* Prevent wrapping */
+    transition: background-color 0.3s ease;
+}
+
+.dropdown h2:hover {
+    background-color: lightgray;
+    cursor: pointer;
 }
