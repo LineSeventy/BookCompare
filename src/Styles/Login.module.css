@@ -12,6 +12,7 @@
     justify-content: center;
     width: 100%;
     height: 100%;
+    overflow: hidden;
   }
   
 
@@ -114,6 +115,7 @@
     position: relative; /* For close button positioning */
     transform: translateY(-10px);
     animation: slideIn 0.4s ease-in-out forwards; /* Smooth slide-in animation */
+
   }
   
   @keyframes slideIn {
@@ -146,7 +148,8 @@
   }
   
   .modalForm input[type="email"],
-  .modalForm input[type="password"] {
+  .modalForm input[type="password"],
+  .modalForm input[type="text"] {
     width: 100%;
     padding: 12px;
     border: 1px solid #ced4da;

@@ -52,12 +52,12 @@ function NavBar() {
       <header>
         <nav>
           <div>
-            <NavLink to="#">User Profile</NavLink>
+            <NavLink to="/User">User Profile</NavLink>
             <NavLink to="#" onClick={handleSearchToggle}>Search</NavLink>
           </div>
           <div>
             <NavLink to={"/Books"}>Books</NavLink>
-            <NavLink to={"/"}>Home</NavLink>
+            <NavLink to={"/Home"}>Home</NavLink>
             <NavLink to={"/About"}>About</NavLink>
           </div>
         </nav>
