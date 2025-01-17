@@ -135,7 +135,7 @@ function Home() {
               </label>
             </form>
             <button onClick={handleSignUp}>Submit</button>
-            <button onClick={() => setCreateAcc(false)}>Close Modal</button>
+            <button onClick={() => setCreateAcc(false)}>Close </button>
           </div>
         </div>
       )}

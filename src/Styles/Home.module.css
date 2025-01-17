@@ -1,0 +1,85 @@
+:root {
+    --primary-color: #2f4f4f;
+    --secondary-color: #ffffff;
+    --accent-color: #ff6347;
+    --background-color: #f4f4f9;
+    --text-color: #333333;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: var(--text-color);
+    padding: 2em;
+    gap: 2em;
+    height: 100%;
+    min-height: 80vh;
+    
+  }
+  
+
+  .hero {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 3em 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+  }
+  
+  .heroTitle {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+    font-weight: bold;
+  }
+  
+  .heroDescription {
+    font-size: 1.2rem;
+    margin-bottom: 2em;
+  }
+  
+  .heroButton {
+    padding: 0.8em 2em;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .heroButton:hover {
+    background-color: darkorange;
+    transform: scale(1.05);
+  }
+  
+
+  .features {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .featuresTitle {
+    font-size: 2rem;
+    margin-bottom: 1em;
+  }
+  
+  .featuresList {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  .featuresList li {
+    margin: 0.5em 0;
+  }
+  
+
+ 

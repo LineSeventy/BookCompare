@@ -1,0 +1,125 @@
+:root {
+    --bg-color: #deb887;
+    --text-color: #000;
+    --hover-bg-color: #c19a6b;
+    --input-bg-color: #fff;
+    --input-border-color: #ccc;
+    --overlay-bg-color: rgba(0, 0, 0, 0.5);
+    --shadow-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--bg-color);
+    box-shadow: 0 2px 5px var(--shadow-color);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+  }
+  
+  .navLeft,
+  .navRight {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+  }
+  
+  .navLink {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navLink:hover,
+  .navLink:focus {
+    background-color: var(--hover-bg-color);
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .searchToggle {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    transition: color 0.3s ease;
+  }
+  
+  .searchToggle:hover,
+  .searchToggle:focus {
+    color: white;
+  }
+  
+  .searchBarOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--overlay-bg-color);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .searchBar {
+    background-color: var(--input-bg-color);
+    padding: 1em;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 5px 10px var(--shadow-color);
+  }
+  
+  .searchInput {
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1rem;
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    margin-bottom: 0.5em;
+  }
+  
+  .searchResults {
+    background-color: var(--input-bg-color);
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    box-shadow: 0 1em 1em var(--shadow-color);
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .searchResult {
+    padding: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .searchResult:hover {
+    background-color: var(--hover-bg-color);
+    color: white;
+  }
+  
+  .noResults {
+    padding: 0.5em;
+    color: red;
+    text-align: center;
+  }
+  
